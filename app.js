@@ -67,7 +67,7 @@ function(accessToken, refreshToken, profile, cb) {
 ));
 
  ///////////////////////////////////// Database setup ////////////////////////////////////
- mongoose.connect("mongodb+srv://admin-prabhat:Tomarprabhat@123@cluster0.gpb1m.mongodb.net/User?retryWrites=true&w=majority", {
+ mongoose.connect("mongodb://localhost:27017/UserDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,
